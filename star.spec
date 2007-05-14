@@ -1,5 +1,5 @@
 Name:		star
-Version:	1.5a73
+Version:	1.5a79
 Release:	%mkrel 1
 Summary:	An archiving tool with ACL support
 Source:		ftp://ftp.berlios.de/pub/star/alpha/%{name}-%{version}.tar.bz2
@@ -88,7 +88,6 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_bindir}/scpio
 %{_bindir}/spax
 %{_bindir}/star
-%{_bindir}/star_fat
 %{_bindir}/star_sym
 %{_bindir}/suntar
 %{_sbindir}/rmt-star
@@ -96,7 +95,8 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %files devel
 %defattr(-,root,root)
-%{_includedir}/*.h
+%{_includedir}/schily/*.h
+%{_includedir}/schily/*/*.h
 %{_libdir}/lib*.a
 %{_mandir}/man3/*
 %{_mandir}/man5/*
