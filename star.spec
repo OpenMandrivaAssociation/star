@@ -91,7 +91,7 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_bindir}/star_sym
 %{_bindir}/suntar
 %{_sbindir}/rmt-star
-%{_mandir}/man1/*.1.bz2
+%{_mandir}/man1/*.1*
 
 %files devel
 %defattr(-,root,root)
