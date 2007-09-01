@@ -77,7 +77,8 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %defattr(-,root,root)
-%doc AN-%{version} README COPYING README.ACL README.crash README.largefiles README.linux
+%doc AN-%{version} README COPYING
+%doc READMEs/README.linux star/README.*
 %doc README.otherbugs README.pattern README.posix-2001  README.SSPM STARvsGNUTAR
 %doc STATUS.alpha TODO
 %{_sysconfdir}/default/star
