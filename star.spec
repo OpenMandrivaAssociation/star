@@ -79,7 +79,7 @@ rm -rf ${RPM_BUILD_ROOT}
 %defattr(-,root,root)
 %doc AN-%{version} README COPYING
 %doc READMEs/README.linux star/README.*
-%doc README.otherbugs README.pattern README.posix-2001  README.SSPM STARvsGNUTAR
+%doc star/STARvsGNUTAR
 %doc STATUS.alpha TODO
 %{_sysconfdir}/default/star
 %{_sysconfdir}/default/rmt
