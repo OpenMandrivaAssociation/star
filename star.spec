@@ -72,6 +72,9 @@ rm -f ${RPM_BUILD_ROOT}/%{_libdir}/libschily.a
 mkdir -p ${RPM_BUILD_ROOT}/%{_sysconfdir}/default
 mv ${RPM_BUILD_ROOT}/%{_prefix}%{_sysconfdir}/default/* ${RPM_BUILD_ROOT}/%{_sysconfdir}/default
 
+# fwang: I don't know why it installs to here
+rm -f ${RPM_BUILD_ROOT}%{_datadir}/doc/rmt/default-rmt.sample
+
 %clean
 rm -rf ${RPM_BUILD_ROOT}
 
@@ -80,6 +83,7 @@ rm -rf ${RPM_BUILD_ROOT}
 %doc AN-%{version} README COPYING
 %doc READMEs/README.linux star/README.*
 %doc star/STARvsGNUTAR
+%doc rmt/default-rmt.sample
 %doc STATUS.alpha TODO
 %{_sysconfdir}/default/star
 %{_sysconfdir}/default/rmt
