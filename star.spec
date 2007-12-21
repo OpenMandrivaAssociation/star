@@ -5,6 +5,7 @@ Summary:	An archiving tool with ACL support
 Source:		ftp://ftp.berlios.de/pub/star/alpha/%{name}-%{version}.tar.bz2
 License:	GPLv2+ LGPLv2+ CDDL
 Group:		Archiving/Backup
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	libattr-devel libacl-devel libext2fs-devel
 Prefix:		/usr
 Patch1:		star_1.5-ren.diff.bz2
