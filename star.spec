@@ -1,6 +1,6 @@
 Name:		star
 Version:	1.5a89
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	An archiving tool with ACL support
 Source:		ftp://ftp.berlios.de/pub/star/alpha/%{name}-%{version}.tar.bz2
 License:	GPLv2+ LGPLv2+ CDDL
