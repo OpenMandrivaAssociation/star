@@ -7,7 +7,6 @@ License:	GPLv2+ LGPLv2+ CDDL
 Group:		Archiving/Backup
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	libattr-devel libacl-devel libext2fs-devel
-Prefix:		/usr
 Patch1:		compile-patch.gz
 
 %description
@@ -50,7 +49,7 @@ make COPTX=-DTRY_EXT2_FS
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make "INS_BASE=${RPM_BUILD_ROOT}/%{prefix}" install MANDIR=share/man
+make "INS_BASE=${RPM_BUILD_ROOT}/%{_prefix}" install MANDIR=share/man
 
 # The following files conflict with GNU tar & mtr
 rm -f ${RPM_BUILD_ROOT}/%{_bindir}/{,us}tar
